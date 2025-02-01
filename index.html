@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Sena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /*Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /*Hero Section */
+        .hero {
+            background: linear-gradient(135,deg, #1e90ff, #000);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .hero .btn {
+            background-color: #1e90ff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        .hero .btn:hover {
+            background-color: #00bfff;
+        }
+
+        /*Animações */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /*Seção Sobre Mim */
+        .about {
+            padding: 50px 20px;
+            background-color: #000;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1e90ff;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /*Seção Projetos */
+        .projects {
+            padding: 50px 20px;
+            background-color: #111;
+            text-align: center;
+        }
+
+        .projects h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1e90ff;
+        }
+
+        .projects-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .projects-card {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .projects-card:hover {
+            transform: translateY(-10);
+            box-shadow: 0 10px 20px rgba(30, 144, 255, 0.5);
+        }
+
+        .projects-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .projects-card h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .projects-card p {
+            font-size: 1rem;
+        }
+
+        /*Seção Contato */
+        .contact {
+            padding: 50px 20px;
+            background-color: #000;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1e90ff;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact input, .contact textarea {
+            padding: 10px;
+            border: 1px solid #1e90ff;
+            border-radius: 5px;
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+
+        .contact button {
+            background-color: #1e90ff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact button:hover {
+            background-color: #00bfff;
+        }
+
+        /*Footer */
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        footer a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!--Hero Section-->
+    <section class="hero">
+        <div>
+            <h1>Olá, eu sou Gabriel Sena</h1>
+            <p>Desenvolvedor FullStack</p>
+            <button class="btn">Ver Projetos</button>
+        </div>
+    </section>
+    <!--Sobre Mim-->
+    <section class="about">
+        <h2>Sobre Mim</h2>
+        <p>
+            Sou um desenvolvedor FullStack apaixonado por criar soluções criativas e funcionais.
+            Com experiência em HTML, CSS, JavaScript e design, estou sempre buscando aprnder e me desafiar com novos projetos.
+        </p>
+    </section>
+    <!--Projetos-->
+    <section class="projects">
+        <h2>Projetos</h2>
+        <div class="projects-grid">
+            <div class="projects-card">
+                <img src="https://via.placeholder.com/300" alt="Projeto 1">
+                <h3>Projeto 1</h3>
+                <p>Descrição brave de projeto.</p>
+            </div>
+            <div class="projects-card">
+                <img src="https.://via.placeholder.com/300" alt="Projeto 2">
+                <h3>Projeto 2</h3>
+                <p>Descrição breve do projeto.</p>
+            </div>
+            <div class="projects-card"> 
+                <img src="https://via.placeholder.com/300" alt="Projeto 3">
+                <h3>Projeto 3</h3>
+                <p>Descrição breve do projeto.</p>
+            </div>
+        </div>
+    </section>
+    <!--Contato-->
+    <section class="contact">
+        <h2>Contato</h2>
+        <form action=""https://formspree.io/f/xldgnnae" method="POST">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu E-mail" required>
+            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <!--Footer-->
+    <p>&copy; 2025 Gabriel Sena. Todos os direitos reservados.</p>
+    <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+</body>
+</html>
